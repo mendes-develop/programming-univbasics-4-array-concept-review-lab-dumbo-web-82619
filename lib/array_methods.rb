@@ -16,7 +16,7 @@ def find_max_value(array)
   array.length do |index|
     if highest_number <= array[index]
       highest_number = array[index]
-    end
+
   end
     return highest_number
 end
@@ -25,14 +25,14 @@ end
 
 def find_min_value(array)
   # Add your solution here
-  #   highest_number = 0
+    highest_number = 0
   
-  # array.length do |index|
-  #   if highest_number <= array[index]
-  #     highest_number = array[index]
-  #   end
-  # end
-  #   return highest_number
+  array.length do |index|
+    if highest_number <= array[index]
+      highest_number = array[index]
+    end
+  end
+    return highest_number
 end
 
 find_max_value([1,2,1,3,4,3,5,4,3,2,1])
