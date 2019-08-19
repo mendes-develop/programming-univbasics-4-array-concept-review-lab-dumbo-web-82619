@@ -26,7 +26,7 @@ end
 
 def find_min_value(array)
   # Add your solution here
-    highest_number = 0
+    highest_number = array[0]
   
   array.length do |index|
     if highest_number <= array[index]
