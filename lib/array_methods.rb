@@ -26,14 +26,14 @@ end
 
 def find_min_value(array)
   # Add your solution here
-    highest_number = array[0]
+    lowest_number = array[0]
   
   array.length do |index|
-    if highest_number <= array[index]
-      highest_number = array[index]
+    if lowest_number >= array[index]
+      lowest_number = array[index]
     end
   end
-    return highest_number
+    return lowest_number
 end
 
 find_max_value([1,2,1,3,4,3,5,4,3,2,1])
