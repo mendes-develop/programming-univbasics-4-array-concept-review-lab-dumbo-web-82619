@@ -1,7 +1,7 @@
 def find_element_index(array, value_to_find)
   # Add your solution here
   
-  array.length do |index|
+  array.length.times do |index|
     if array[index] == value_to_find
       return index
     end
@@ -14,7 +14,7 @@ def find_max_value(array)
   # Add your solution here
   highest_number = array[0]
   
-  array.length do |index|
+  array.length.times do |index|
     if highest_number <= array[index]
       highest_number = array[index]
     end
@@ -28,7 +28,7 @@ def find_min_value(array)
   # Add your solution here
     lowest_number = array[0]
   
-  array.length do |index|
+  array.length.times do |index|
     if lowest_number >= array[index]
       lowest_number = array[index]
     end
